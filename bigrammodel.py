@@ -1,6 +1,7 @@
 import torch
 import torch.nn as nn
 from torch.nn import functional as F
+torch.set_float32_matmul_precision('high')
 
 # hyperparameters
 batch_size = 32 # how many independent sequences will we process in parallel?
